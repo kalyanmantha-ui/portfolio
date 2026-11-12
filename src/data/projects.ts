@@ -286,10 +286,10 @@ export const more = [
 
 export const profile = {
   name: "Kalyan Mantha",
-  role: "Frontend engineer and UI designer",
+  role: "Software Engineer",
   location: "San Jose, CA",
   intro:
-    "I design interfaces in Figma and build them in React and TypeScript. I care about the parts people feel: clear flows, keyboard and screen reader support, and states that behave when things go wrong.",
+    "I'm a software engineer who works across the stack: I design interfaces in Figma, build them in React and TypeScript, and write the Java, Spring Boot and PostgreSQL behind them. I care about the parts people feel and the parts that must stay correct: clear flows, keyboard and screen reader support, safe concurrent writes, and states that behave when things go wrong.",
   email: "kalyanmantha1410@gmail.com",
   github: "https://github.com/kalyanmantha-ui",
   linkedin: "https://linkedin.com/in/kalyan-mantha",

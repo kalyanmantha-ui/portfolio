@@ -39,9 +39,10 @@ h2 { font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 14
 
 /* ---- home ---- */
 .hero { padding-top: 64px; padding-bottom: 40px; }
+.hero-actions { margin-top: 26px; }
 .hero h1 { font-size: clamp(2.7rem, 7.4vw, 6.4rem); max-width: 13.5em; }
 .board-section { padding-bottom: 20px; }
-.board { background: #0e1424; border-radius: 10px; padding: 18px 20px 12px; box-shadow: inset 0 0 0 3px #1f2842; font-size: clamp(11px, 2.7vw, 26px); }
+.board { background: #0e1424; border-radius: 10px; padding: 18px 20px 12px; box-shadow: inset 0 0 0 3px #1f2842; font-size: clamp(8.5px, 2.7vw, 26px); }
 .board-head { display: grid; grid-template-columns: 2.2em auto auto; gap: 0 .9em; color: #ffc20e; opacity: .55; font-size: 13px; font-weight: 600; padding: 0 0 10px; }
 .board-head span:nth-child(3) { margin-left: .8em; }
 .board-row { display: flex; align-items: center; gap: .9em; padding: .5em 0; border-top: 1px solid #222c47; text-decoration: none; color: #ffc20e; }
@@ -251,7 +252,9 @@ h2 { font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 14
   .rows a { grid-template-columns: 14px 1fr; gap: 6px 14px; }
   .rows .rd { grid-column: 2; }
   .skills div { grid-template-columns: 1fr; gap: 2px; }
-  nav { gap: 14px; }
+  .header { flex-wrap: wrap; gap: 10px 16px; padding-top: 16px; padding-bottom: 14px; }
+  nav { gap: 14px; width: 100%; justify-content: space-between; }
+  nav a { font-size: 15px; }
   .stage { padding: 14px 10px 8px; }
 }
 @media (prefers-reduced-motion: reduce) {

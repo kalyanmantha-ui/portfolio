@@ -76,7 +76,7 @@ const boardRows: BoardRow[] = [
 function Home() {
   const [walking, setWalking] = useState(!prefersReduced());
   useEffect(() => {
-    const t = window.setTimeout(() => setWalking(false), 2600);
+    const t = window.setTimeout(() => setWalking(false), 1900);
     return () => window.clearTimeout(t);
   }, []);
   const extra = projects.filter((p) => !tours[p.slug]);
@@ -84,10 +84,18 @@ function Home() {
   return (
     <>
       <section className="hero wrap">
-        <h1>I design interfaces, then build them so everyone can use them.</h1>
+        <h1>I build software end to end, from the interface to the database.</h1>
         <p className="lead">
-          My clinic scheduling app took 1,000 simultaneous booking requests on 50 slots with zero double-bookings. Below are seven projects, each with a guide who walks you through it, in a simple or detailed version.
+          My clinic scheduling app took 1,000 simultaneous booking requests on 50 slots with zero double-bookings, thanks to row locking and a unique index. Below are seven projects, each with a guide who walks you through it, in a simple or detailed version.
         </p>
+        <div className="actions hero-actions">
+          <a className="btn solid" href="#/work/clinicq">
+            See the ClinicQ case study
+          </a>
+          <a className="btn" href="#/about">
+            About me
+          </a>
+        </div>
       </section>
 
       <section className="wrap board-section" aria-label="Routes">

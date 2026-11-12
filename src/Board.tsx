@@ -12,7 +12,7 @@ function Cell({ ch, delay, animate }: { ch: string; delay: number; animate: bool
       return;
     }
     let count = 0;
-    const total = 5 + Math.floor(Math.random() * 8);
+    const total = 4 + Math.floor(Math.random() * 4);
     let t = 0;
     const step = () => {
       count += 1;
@@ -23,7 +23,7 @@ function Cell({ ch, delay, animate }: { ch: string; delay: number; animate: bool
       }
       setShown(SET[Math.floor(Math.random() * SET.length)]);
       setN((v) => v + 1);
-      t = window.setTimeout(step, 58);
+      t = window.setTimeout(step, 45);
     };
     t = window.setTimeout(step, delay);
     return () => window.clearTimeout(t);
@@ -43,7 +43,7 @@ function Cells({ text, cols, base, animate }: { text: string; cols: number; base
   return (
     <span className="cells" aria-hidden="true">
       {padded.split("").map((c, i) => (
-        <Cell key={i} ch={c} delay={base + i * 45} animate={animate} />
+        <Cell key={i} ch={c} delay={base + i * 22} animate={animate} />
       ))}
     </span>
   );
@@ -74,8 +74,8 @@ export default function Board({
           <span className="badge" aria-hidden="true">
             {r.name[0]}
           </span>
-          <Cells text={r.name} cols={nameCols} base={500 + i * 380} animate={animate} />
-          <Cells text={r.status} cols={statusCols} base={900 + i * 380} animate={animate} />
+          <Cells text={r.name} cols={nameCols} base={150 + i * 130} animate={animate} />
+          <Cells text={r.status} cols={statusCols} base={300 + i * 130} animate={animate} />
           <svg className="chev" viewBox="0 0 12 20" width="12" height="20" aria-hidden="true">
             <path d="M2 2l8 8-8 8" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
