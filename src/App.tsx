@@ -313,7 +313,7 @@ function Contact() {
   return (
     <div className="wrap page">
       <h1 className="page-h">Say hello</h1>
-      <p className="lead">I'm looking for frontend and UI/UX roles. Email is the fastest way to reach me.</p>
+      <p className="lead">I'm open to software engineering roles across the stack: frontend, backend, full-stack, UI/UX and SQL. Email is the fastest way to reach me.</p>
       <a className="mail" href={`mailto:${profile.email}`}>
         {profile.email}
       </a>
