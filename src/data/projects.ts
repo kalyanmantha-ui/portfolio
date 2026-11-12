@@ -303,6 +303,7 @@ export const profile = {
     { role: "Software Engineer", org: "GENX IT Solutions", when: "Oct 2026 – Present", text: "React and TypeScript interfaces for customer service agents, on a Java Spring Boot backend running on AWS." },
     { role: "Graduate Assistant", org: "Georgia State University", when: "Aug 2024 – Dec 2025", text: "Built the web (React) and mobile (React Native) front end of a research-sharing platform where researchers store papers and files and other professors can access them, working from Figma designs. Also taught two classes of about 45 students each semester." },
     { role: "Intern", org: "DRDO", when: "May – Jul 2023", text: "Internal tools with Angular and a Java backend, SQL optimization and Python data scripts." },
+    { role: "Intern", org: "Business Web Solutions", when: "Apr – Jun 2022", text: "Built an e-commerce site with React and a Node and Express backend: product listing and detail pages, cart and checkout, sign-up and login, and client-side form validation." },
   ],
   education: "M.S. Computer Science, Georgia State University, May 2026",
 };
